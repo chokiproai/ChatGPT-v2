@@ -1,7 +1,7 @@
 # ChatGPT Web
 
 <div style="font-size: 1.5rem;">
-  <a href="./README.vi.md">Vietnamese</a>
+  <a href="./README.vn.md">Vietnamese</a>
 </div>
 </br>
 
