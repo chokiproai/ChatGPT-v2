@@ -10,32 +10,27 @@
 ![cover](./docs/c1.png)
 ![cover2](./docs/c2.png)
 
-- [Web ChatGPT](#webchatgpt)
-- [Giới thiệu](#giớithiệu)
-- [Lộ trình](#lộtrình)
-- [Điều kiện tiên quyết](#điềukiệntiênquyết)
+- [Web ChatGPT](#web-chatgpt)
+- [Giới thiệu](#giới-thiệu)
+- [Lộ trình](#lộ-trình)
+- [Điều kiện tiên quyết](#điều-kiện-tiên-quyết)
 - [Nút](#nút)
 - [PNPM](#pnpm)
-- [Điền phím](#fill-in-the-keys)
-- [Cài đặt phụ thuộc](#install-dependency)
-- [Phần cuối](#backend)
-- [Giao diện người dùng](#frontend)
-- [Chạy trong môi trường thử nghiệm](#run-in-test-environment)
-- [Dịch vụ phụ trợ](#backend-service)
-- [Trang web giao diện người dùng](#frontend-webpage)
-- [Bao bì](#packaging)
-- [Sử dụng Docker](#using-docker)
-- [Ví dụ về tham số Docker](#docker-parameter-example)
-- [Docker Build \& Run](#docker-build--run)
-- [Docker Compose](#docker-compose)
-- [Triển khai với Đường sắt](#deployment-with-railway)
-- [Biến môi trường đường sắt](#railway-environment-variables)
-- [Đóng gói thủ công](#manual-packaging)
-- [Dịch vụ phụ trợ](#backend-service-1)
-- [Trang web giao diện người dùng](#frontend-webpage-1)
+- [Điền phím](#điền-chìa-khóa)
+- [Cài đặt phụ thuộc](#cài-đặt-phụ-thuộc)
+- [Phần cuối](#phần-cuối)
+- [Giao diện người dùng](#giao-diện-người-dùng)
+- [Chạy trong môi trường thử nghiệm](#chạy-trong-môi-trường-thử-nghiệm)
+- [Dịch vụ phụ trợ](#dịch-vụ-phụ-trợ)
+- [Trang web giao diện người dùng](#giao-diện-trang-web)
+- [Bao bì](#bao-bì)
+- [Sử dụng Docker](#sử-dụng-docker)
+- [Ví dụ về tham số Docker](#ví-dụ-về-tham-số-docker)
+- [Docker Build \& Run](#xây-dựng-và-chạy-docker)
+- [Đóng gói thủ công](#biến-môi-trường-đường-sắt)
+- [Dịch vụ phụ trợ](#Dịch-vụ-phụ-trợ)
+- [Trang web giao diện người dùng](#trang-web-giao-diện-người-dùng)
 - [Câu hỏi thường gặp](#câuhỏithườnggặp)
-- [Đóng góp](#contributing)
-- [Tài trợ](#sponsorship)
 - [Giấy phép](#giấyphép)
 
 ## Giới thiệu
@@ -105,7 +100,7 @@ Biến môi trường:
 nút -v
 ```
 
-###PNPM
+### PNPM
 Nếu bạn chưa cài đặt `pnpm` trước đây:
 ``` vỏ
 npm cài đặt pnpm -g
@@ -216,7 +211,7 @@ http://localhost:3002/
 | `ALL_PROXY`            | Tùy Chọn                                                          | Tất cả Proxy.                                                                                                    |
 
 
-####Dịch vụ phụ trợ
+#### Dịch vụ phụ trợ
 
 > Nếu bạn không cần giao diện `node` của dự án này, bạn có thể bỏ qua các bước sau.
 
@@ -235,7 +230,8 @@ sản phẩm pnpm
 
 Tái bút: Bạn cũng có thể chạy `pnpm start` trực tiếp trên máy chủ mà không cần đóng gói.
 
-#### Trang web giao diện người dùng1. Tham khảo nội dung tệp `.env.example` thư mục gốc để tạo tệp `.env`, sửa đổi `VITE_GLOB_API_URL` trong `.env` tại thư mục gốc thành địa chỉ giao diện phụ trợ thực tế của bạn.
+#### Trang web giao diện người dùng
+1. Tham khảo nội dung tệp `.env.example` thư mục gốc để tạo tệp `.env`, sửa đổi `VITE_GLOB_API_URL` trong `.env` tại thư mục gốc thành địa chỉ giao diện phụ trợ thực tế của bạn.
 2. Chạy lệnh sau trong thư mục gốc rồi sao chép các tệp trong thư mục `dist` vào thư mục gốc của dịch vụ trang web của bạn.
 
 [Thông tin tham khảo](https://cn.vitejs.dev/guide/static-deploy.html#building-the-app)
