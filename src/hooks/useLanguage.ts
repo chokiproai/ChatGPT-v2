@@ -15,8 +15,8 @@ export function useLanguage() {
         setLocale('en-US')
         return enUS
       default:
-        setLocale('vi-VN')
-        return viVN
+        setLocale('en-US')
+        return enUS
     }
   })
 

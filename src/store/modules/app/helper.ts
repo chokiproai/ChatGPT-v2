@@ -4,7 +4,7 @@ const LOCAL_NAME = 'appSetting'
 
 export type Theme = 'light' | 'dark' | 'auto'
 
-export type Language = 'vi-VN' | 'zh-CN' | 'zh-TW' | 'en-US'
+export type Language = 'vi-VN' | 'en-US'
 
 export interface AppState {
   siderCollapsed: boolean
@@ -13,7 +13,7 @@ export interface AppState {
 }
 
 export function defaultSetting(): AppState {
-  return { siderCollapsed: false, theme: 'light', language: 'vi-VN' }
+  return { siderCollapsed: false, theme: 'light', language: 'en-US' }
 }
 
 export function getLocalSetting(): AppState {

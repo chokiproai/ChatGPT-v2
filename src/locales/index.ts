@@ -2,14 +2,12 @@ import type { App } from 'vue'
 import { createI18n } from 'vue-i18n'
 import viVN from './vi-VN'
 import enUS from './en-US'
-import zhCN from './zh-CN'
-import zhTW from './zh-TW'
 import { useAppStoreWithOut } from '@/store/modules/app'
 import type { Language } from '@/store/modules/app/helper'
 
 const appStore = useAppStoreWithOut()
 
-const defaultLocale = appStore.language || 'vi-VN'
+const defaultLocale = appStore.language || 'en-US'
 
 const i18n = createI18n({
   locale: defaultLocale,
@@ -18,8 +16,6 @@ const i18n = createI18n({
   messages: {
     'vi-VN': viVN,
     'en-US': enUS,
-		'zh-CN': zhCN,
-    'zh-TW': zhTW,
   },
 })
 
