@@ -4,7 +4,7 @@ const LOCAL_NAME = 'appSetting'
 
 export type Theme = 'light' | 'dark' | 'auto'
 
-export type Language = 'vi-VN' | 'en-US'
+export type Language = 'en-US' | 'vi-VN'
 
 export interface AppState {
   siderCollapsed: boolean

@@ -54,8 +54,8 @@ const themeOptions: { label: string; key: Theme; icon: string }[] = [
 ]
 
 const languageOptions: { label: string; key: Language; value: Language }[] = [
-  { label: 'Tiếng Việt', key: 'vi-VN', value: 'vi-VN' },
   { label: 'English', key: 'en-US', value: 'en-US' },
+  { label: 'Tiếng Việt', key: 'vi-VN', value: 'vi-VN' },
 ]
 
 function updateUserInfo(options: Partial<UserInfo>) {
