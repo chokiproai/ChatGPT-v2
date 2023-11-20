@@ -93,7 +93,7 @@ async function onConversation() {
     +uuid,
     {
       dateTime: new Date().toLocaleString(),
-      text: '思考中',
+      text: '',
       loading: true,
       inversion: false,
       error: false,
