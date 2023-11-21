@@ -15,13 +15,13 @@ const { HttpsProxyAgent } = httpsProxyAgent
 dotenv.config()
 
 const ErrorCodeMessage: Record<string, string> = {
-  401: '[OpenAI] Đã cung cấp khóa API không chính xác',
-  403: '[OpenAI] Máy chủ từ chối truy cập, vui lòng thử lại sau',
-  502: '[OpenAI] Cổng xấu',
-  503: '[OpenAI] Máy chủ đang bận, vui lòng thử lại sau',
-  504: '[OpenAI] Hết thời gian yêu cầu',
-  500: '[OpenAI] Lỗi máy chủ nội bộ',
-  429: '[OpenAI] Máy chủ quá tải',
+  401: '[OpenAI] Đã cung cấp khóa API không chính xác | Incorrect API key provided',
+  403: '[OpenAI] Máy chủ từ chối truy cập, vui lòng thử lại sau | Server refused to access, please try again later',
+  502: '[OpenAI] Cổng xấu | Bad Gateway',
+  503: '[OpenAI] Máy chủ đang bận, vui lòng thử lại sau | Server is busy, please try again later',
+  504: '[OpenAI] Hết thời gian chờ | Gateway Time-out',
+  500: '[OpenAI] Lỗi máy chủ nội bộ | Internal Server Error',
+  429: '[OpenAI] Máy chủ quá tải | Server overloaded',
 }
 
 const timeoutMs: number = !isNaN(+process.env.TIMEOUT_MS) ? +process.env.TIMEOUT_MS : 100 * 1000
