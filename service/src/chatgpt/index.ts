@@ -62,9 +62,20 @@ let api: ChatGPTAPI | ChatGPTUnofficialProxyAPI
         options.maxModelTokens = 32768
         options.maxResponseTokens = 8192
       }
+      // if use GPT-4 Turbo
+      else if (model.toLowerCase().includes('1106-preview')) {
+        options.maxModelTokens = 128000
+        options.maxResponseTokens = 4096
+      }
       else {
         options.maxModelTokens = 8192
         options.maxResponseTokens = 2048
+      }
+    }
+    else if (model.toLowerCase().includes('gpt-3.5')) {
+      if (model.toLowerCase().includes('16k')) {
+        options.maxModelTokens = 16384
+        options.maxResponseTokens = 4096
       }
     }
 
@@ -77,7 +88,6 @@ let api: ChatGPTAPI | ChatGPTUnofficialProxyAPI
     apiModel = 'ChatGPTAPI'
   }
   else {
-    console.log('OPENAI_ACCESS_TOKEN',OPENAI_ACCESS_TOKEN);
     const options: ChatGPTUnofficialProxyAPIOptions = {
       accessToken: process.env.OPENAI_ACCESS_TOKEN,
       apiReverseProxyUrl: isNotEmptyString(process.env.API_REVERSE_PROXY) ? process.env.API_REVERSE_PROXY : 'https://ai.fakeopen.com/api/conversation',
@@ -129,14 +139,8 @@ async function chatReplyProcess(options: RequestOptions) {
 }
 
 async function fetchUsage() {
-  let OPENAI_API_KEY = process.env.OPENAI_API_KEY
+  const OPENAI_API_KEY = process.env.OPENAI_API_KEY
   const OPENAI_API_BASE_URL = process.env.OPENAI_API_BASE_URL
-
-  if (isNotEmptyString(process.env.OPENAI_API_KEY_ARR)){
-    const OPENAI_API_KEY_ARR = JSON.parse(process.env.OPENAI_API_KEY_ARR);
-    const randomIndex = Math.floor(Math.random() * OPENAI_API_KEY_ARR.length);
-    OPENAI_API_KEY = OPENAI_API_KEY_ARR[randomIndex];
-  }
 
   if (!isNotEmptyString(OPENAI_API_KEY))
     return Promise.resolve('-')
