@@ -53,8 +53,6 @@ Comparison:
 1. `ChatGPTAPI` uses `gpt-3.5-turbo-0301` to simulate `ChatGPT` through the official `OpenAI` completion `API` (the most reliable method, but it is not free and does not use models specifically tuned for chat).
 2. `ChatGPTUnofficialProxyAPI` accesses `ChatGPT`'s backend `API` via an unofficial proxy server to bypass `Cloudflare` (uses the real `ChatGPT`, is very lightweight, but depends on third-party servers and has rate limits).
 
-[Details](https://github.com/Chanzhaoyu/chatgpt-web/issues/138)
-
 Switching Methods:
 1. Go to the `service/.env.example` file and copy the contents to the `service/.env` file.
 2. For `OpenAI API Key`, fill in the `OPENAI_API_KEY` field [(Get apiKey)](https://platform.openai.com/overview).
