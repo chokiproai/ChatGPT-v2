@@ -58,7 +58,7 @@ Phương pháp chuyển đổi:
 
 Proxy ngược:
 
-Có sẵn khi sử dụng `ChatGPTUnofficialProxyAPI`.[Chi tiết](https://api.chatanywhere.org/v1/oauth/free/github/render)
+Có sẵn khi sử dụng miễn phí `ChatGPTUnofficialProxyAPI`.[Chi tiết](https://api.chatanywhere.org/v1/oauth/free/github/render)
 
 ``` vỏ
 # dịch vụ/.env
