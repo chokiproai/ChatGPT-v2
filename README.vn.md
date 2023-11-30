@@ -44,17 +44,17 @@ Hỗ trợ các mô hình kép, cung cấp hai phương thức `ChatGPT API` kh�
 | `ChatGPTAPI(gpt-3.5-turbo-0301)` | Không | Đáng tin cậy | Tương đối vụng về |
 | `ChatGPTUnofficialProxyAPI(Web accessToken)` | Có | Tương đối không đáng tin cậy | Thông minh |
 
-So sánh:
+- So sánh:
 1. `ChatGPTAPI` sử dụng `gpt-3.5-turbo-0301` để mô phỏng `ChatGPT` thông qua `API` hoàn thành `OpenAI` chính thức (phương pháp đáng tin cậy nhất, nhưng nó không miễn phí và không sử dụng các mô hình được điều chỉnh riêng cho trò chuyện ).
 2. `ChatGPTUnofficialProxyAPI` truy cập `API` phụ trợ của `ChatGPT` thông qua máy chủ proxy không chính thức để vượt qua `Cloudflare` (sử dụng `ChatGPT` thực, rất nhẹ, nhưng phụ thuộc vào máy chủ của bên thứ ba và có giới hạn tốc độ).
 
-Phương pháp chuyển đổi:
+- Phương pháp chuyển đổi:
 1. Đi tới tệp `service/.env.example` và sao chép nội dung vào tệp `service/.env`.
 2. Đối với `Khóa API OpenAI`, hãy điền vào trường `OPENAI_API_KEY` [(Nhận apiKey)](https://platform.openai.com/overview).
 3. Đối với `Web API`, hãy điền vào trường `OPENAI_ACCESS_TOKEN` [(Nhận accessToken)](https://chat.openai.com/api/auth/session).
 4. Khi cả hai đều có mặt, `Khóa API OpenAI` sẽ được ưu tiên.
 
-Proxy ngược:
+- Proxy ngược:
 
 Có sẵn khi sử dụng miễn phí `ChatGPTUnofficialProxyAPI`.[Chi tiết](https://api.chatanywhere.org/v1/oauth/free/github/render)
 
@@ -63,7 +63,7 @@ Có sẵn khi sử dụng miễn phí `ChatGPTUnofficialProxyAPI`.[Chi tiết](h
 API_REVERSE_PROXY=
 ```
 
-Biến môi trường:
+- Biến môi trường:
 
 Đối với tất cả các biến tham số, hãy kiểm tra [tại đây](#docker-parameter-example) hoặc xem:
 
@@ -89,8 +89,6 @@ Biến môi trường:
 [ ✓] Chủ đề giao diện
 
 [✗] Thêm...
-
-## Điều kiện tiên quyết
 
 ### Nút
 
