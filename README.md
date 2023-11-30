@@ -49,17 +49,17 @@ Supports dual models, provides two unofficial `ChatGPT API` methods:
 | `ChatGPTAPI(gpt-3.5-turbo-0301)`                           | No     | Reliable    | Relatively clumsy |
 | `ChatGPTUnofficialProxyAPI(Web accessToken)` | Yes    | Relatively unreliable | Smart |
 
-Comparison:
+- Comparison:
 1. `ChatGPTAPI` uses `gpt-3.5-turbo-0301` to simulate `ChatGPT` through the official `OpenAI` completion `API` (the most reliable method, but it is not free and does not use models specifically tuned for chat).
 2. `ChatGPTUnofficialProxyAPI` accesses `ChatGPT`'s backend `API` via an unofficial proxy server to bypass `Cloudflare` (uses the real `ChatGPT`, is very lightweight, but depends on third-party servers and has rate limits).
 
-Switching Methods:
+- Switching Methods:
 1. Go to the `service/.env.example` file and copy the contents to the `service/.env` file.
 2. For `OpenAI API Key`, fill in the `OPENAI_API_KEY` field [(Get apiKey)](https://platform.openai.com/overview).
 3. For `Web API`, fill in the `OPENAI_ACCESS_TOKEN` field [(Get accessToken)](https://chat.openai.com/api/auth/session).
 4. When both are present, `OpenAI API Key` takes precedence.
 
-Reverse Proxy:
+- Reverse Proxy:
 
 Available when using free `ChatGPTUnofficialProxyAPI`.[Details](https://api.chatanywhere.org/v1/oauth/free/github/render)
 
@@ -68,7 +68,7 @@ Available when using free `ChatGPTUnofficialProxyAPI`.[Details](https://api.chat
 API_REVERSE_PROXY=
 ```
 
-Environment Variables:
+- Environment Variables:
 
 For all parameter variables, check [here](#docker-parameter-example) or see:
 
@@ -94,8 +94,6 @@ For all parameter variables, check [here](#docker-parameter-example) or see:
 [✓] Interface themes
 
 [✗] More...
-
-## Prerequisites
 
 ### Node
 
