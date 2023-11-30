@@ -63,7 +63,7 @@ Switching Methods:
 
 Reverse Proxy:
 
-Available when using `ChatGPTUnofficialProxyAPI`.[Details](https://github.com/transitive-bullshit/chatgpt-api#reverse-proxy)
+Available when using free `ChatGPTUnofficialProxyAPI`.[Details](https://api.chatanywhere.org/v1/oauth/free/github/render)
 
 ```shell
 # service/.env
