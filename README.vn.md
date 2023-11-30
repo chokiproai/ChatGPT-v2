@@ -58,7 +58,7 @@ Phương pháp chuyển đổi:
 
 Proxy ngược:
 
-Có sẵn khi sử dụng `ChatGPTUnofficialProxyAPI`.[Chi tiết](https://github.com/transitive-bullshit/chatgpt-api#reverse-proxy)
+Có sẵn khi sử dụng `ChatGPTUnofficialProxyAPI`.[Chi tiết](https://api.chatanywhere.org/v1/oauth/free/github/render)
 
 ``` vỏ
 # dịch vụ/.env
