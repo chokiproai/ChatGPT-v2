@@ -56,7 +56,7 @@ Hỗ trợ các mô hình kép, cung cấp hai phương thức `ChatGPT API` kh�
 
 - Proxy ngược:
 
-Có sẵn khi sử dụng miễn phí `ChatGPTUnofficialProxyAPI`.[Chi tiết](https://api.chatanywhere.org/v1/oauth/free/github/render)
+Có sẵn khi sử dụng miễn phí `ChatGPTUnofficialProxyAPI`.[Chi tiết](https://github.com/chokiproai/ChatGPT-v2/blob/master/api%20free.md)
 
 ``` vỏ
 # dịch vụ/.env
