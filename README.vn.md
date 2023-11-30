@@ -48,8 +48,6 @@ So sánh:
 1. `ChatGPTAPI` sử dụng `gpt-3.5-turbo-0301` để mô phỏng `ChatGPT` thông qua `API` hoàn thành `OpenAI` chính thức (phương pháp đáng tin cậy nhất, nhưng nó không miễn phí và không sử dụng các mô hình được điều chỉnh riêng cho trò chuyện ).
 2. `ChatGPTUnofficialProxyAPI` truy cập `API` phụ trợ của `ChatGPT` thông qua máy chủ proxy không chính thức để vượt qua `Cloudflare` (sử dụng `ChatGPT` thực, rất nhẹ, nhưng phụ thuộc vào máy chủ của bên thứ ba và có giới hạn tốc độ).
 
-[Chi tiết](https://github.com/Chanzhaoyu/chatgpt-web/issues/138)
-
 Phương pháp chuyển đổi:
 1. Đi tới tệp `service/.env.example` và sao chép nội dung vào tệp `service/.env`.
 2. Đối với `Khóa API OpenAI`, hãy điền vào trường `OPENAI_API_KEY` [(Nhận apiKey)](https://platform.openai.com/overview).
