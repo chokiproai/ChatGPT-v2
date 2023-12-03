@@ -30,11 +30,13 @@ export default {
     },
     chat: {
         newChatButton: 'Cuộc trò truyện mới',
+        newChatTitle: 'Hội thoại mới',
         placeholder: 'Hỏi tôi bất cứ điều gì...(Shift + Enter = ngắt dòng, "/" để kích hoạt lời nhắc)',
         placeholderMobile: 'Hỏi tôi điều gì đó...',
         copy: 'Sao chép',
         copied: 'Đã sao chép',
         copyCode: 'Sao chép mã',
+        copyFailed: 'Sao chép thất bại',
         clearChat: 'Xóa Chat',
         clearChatConfirm: 'Bạn có chắc chắn muốn xóa chat này?',
         exportImage: 'Xuất Ảnh',
