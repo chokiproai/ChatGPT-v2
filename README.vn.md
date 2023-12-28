@@ -1,11 +1,10 @@
 <h1 align="center">ChatGPT Web</h1>
 
-## [Deployed on Hugging Face](https://huggingface.co/login?next=%2Fspaces%2Fngoctuanai%2Fchatgptfreev2%3Fduplicate%3Dtrue)
-
 <div style="font-size: 1.5rem;">
    <a href="./README.md">Tiếng Anh</a>
 </div>
-</br>
+
+## [Deployed on Hugging Face](https://huggingface.co/login?next=%2Fspaces%2Fngoctuanai%2Fchatgptfreev2%3Fduplicate%3Dtrue)
 
 > Tuyên bố miễn trừ trách nhiệm: Dự án này chỉ được phát hành trên GitHub, theo Giấy phép MIT, miễn phí và dành cho mục đích học tập nguồn mở. Sẽ không có bán tài khoản, dịch vụ trả phí, nhóm thảo luận hoặc diễn đàn. Hãy coi chừng lừa đảo.
 
