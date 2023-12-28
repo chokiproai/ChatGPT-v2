@@ -1,11 +1,10 @@
 <h1 align="center">ChatGPT Web</h1>
 
-## [Deployed on Hugging Face](https://huggingface.co/login?next=%2Fspaces%2Fngoctuanai%2Fchatgptfreev2%3Fduplicate%3Dtrue)
-
 <div style="font-size: 1.5rem;">
   <a href="./README.vn.md">Vietnamese</a>
 </div>
-</br>
+
+## [Deployed on Hugging Face](https://huggingface.co/login?next=%2Fspaces%2Fngoctuanai%2Fchatgptfreev2%3Fduplicate%3Dtrue)
 
 > Disclaimer: This project is only released on GitHub, under the MIT License, free and for open-source learning purposes. There will be no account selling, paid services, discussion groups, or forums. Beware of fraud.
 
