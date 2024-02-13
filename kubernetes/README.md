@@ -1,9 +1,9 @@
-## 增加一个Kubernetes的部署方式
+## Add a Kubernetes deployment method
 ```
 kubectl apply -f deploy.yaml
 ```
 
-### 如果需要Ingress域名接入
+### If you need Ingress domain name access
 ```
 kubectl apply -f ingress.yaml
 ```
